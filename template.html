@@ -1108,7 +1108,16 @@ function createSummaryAndThumb(pID){
 <header id='main-headernbt'>
 <div id='header-wrappernbt'>
 <b:section class='headersec' id='headersec' maxwidgets='1' showaddelement='no'>
-  <b:widget id='Header1' locked='true' title='Data-Driven Reporting | UT Journalism (Header)' type='Header' visible='true'>
+  <b:widget id='Header1' locked='true' title='Data-Driven Reporting | UT Journalism (Header)' type='Header'>
+    <b:widget-settings>
+      <b:widget-setting name='displayUrl'/>
+      <b:widget-setting name='displayHeight'>0</b:widget-setting>
+      <b:widget-setting name='sectionWidth'>-1</b:widget-setting>
+      <b:widget-setting name='useImage'>false</b:widget-setting>
+      <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+      <b:widget-setting name='imagePlacement'>BEHIND</b:widget-setting>
+      <b:widget-setting name='displayWidth'>0</b:widget-setting>
+    </b:widget-settings>
     <b:includable id='main'>
   <b:if cond='data:useImage'>
     <b:if cond='data:imagePlacement == &quot;REPLACE&quot;'>
@@ -1206,7 +1215,28 @@ function createSummaryAndThumb(pID){
 <div id='primarynbt'>
 <div id='mainnbt' role='main'>
 <b:section class='mainblogsec' id='mainblogsec' showaddelement='no'>
-  <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='1' visible='true'>
+  <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='showDateHeader'>true</b:widget-setting>
+      <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
+      <b:widget-setting name='showShareButtons'>true</b:widget-setting>
+      <b:widget-setting name='showCommentLink'>true</b:widget-setting>
+      <b:widget-setting name='style.urlcolor'>#008000</b:widget-setting>
+      <b:widget-setting name='showAuthor'>true</b:widget-setting>
+      <b:widget-setting name='style.linkcolor'>#0000ff</b:widget-setting>
+      <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+      <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+      <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
+      <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+      <b:widget-setting name='showLabels'>true</b:widget-setting>
+      <b:widget-setting name='showLocation'>true</b:widget-setting>
+      <b:widget-setting name='showTimestamp'>true</b:widget-setting>
+      <b:widget-setting name='postsPerAd'>1</b:widget-setting>
+      <b:widget-setting name='showBacklinks'>false</b:widget-setting>
+      <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
+      <b:widget-setting name='showInlineAds'>false</b:widget-setting>
+      <b:widget-setting name='showReactions'>false</b:widget-setting>
+    </b:widget-settings>
     <b:includable id='main' var='top'>
   <b:if cond='data:mobile == &quot;false&quot;'>
 
@@ -2144,7 +2174,11 @@ var randomRelatedIndex,showRelatedPost;(function(n,m,k){var d={widgetTitle:"<h4>
 </div>
 
 <b:section class='sidebarrightnbt' id='sidebarrightnbt' preferred='yes'>
-  <b:widget id='HTML2' locked='false' title='SQL tools' type='HTML' visible='true'>
+  <b:widget id='HTML2' locked='false' title='SQL tools' type='HTML'>
+    <b:widget-settings>
+      <b:widget-setting name='content'>This class uses &lt;a href=&quot;https://www.navicat.com/products/navicat-essentials&quot;&gt;Navicat Essentials&lt;/a&gt; as a tool to write SQL.&lt;br /&gt;
+&lt;img src=&quot;https://3.bp.blogspot.com/-xLamTpwwHTU/U9ms4rkzlcI/AAAAAAAACP0/QZ88I3eMV1wbVppFgeLlbhUnx2gbff-fwCPcB/s200/Premium_72dpi_2230x763.jpg&quot; /&gt;</b:widget-setting>
+    </b:widget-settings>
     <b:includable id='main'>
   <!-- only display title if it's non-empty -->
   <b:if cond='data:title != &quot;&quot;'>
@@ -2157,7 +2191,10 @@ var randomRelatedIndex,showRelatedPost;(function(n,m,k){var d={widgetTitle:"<h4>
   <b:include name='quickedit'/>
 </b:includable>
   </b:widget>
-  <b:widget id='HTML1' locked='false' title='Geocoding services' type='HTML' visible='true'>
+  <b:widget id='HTML1' locked='false' title='Geocoding services' type='HTML'>
+    <b:widget-settings>
+      <b:widget-setting name='content'><![CDATA[Geocoding services for this class are provided by <a href="https://geoservices.tamu.edu">Texas A&M University GeoServices</a>]]></b:widget-setting>
+    </b:widget-settings>
     <b:includable id='main'>
   <!-- only display title if it's non-empty -->
   <b:if cond='data:title != &quot;&quot;'>
@@ -2170,7 +2207,14 @@ var randomRelatedIndex,showRelatedPost;(function(n,m,k){var d={widgetTitle:"<h4>
   <b:include name='quickedit'/>
 </b:includable>
   </b:widget>
-  <b:widget id='Label1' locked='false' title='Categories' type='Label' version='1' visible='true'>
+  <b:widget id='Label1' locked='false' title='Categories' type='Label' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
+      <b:widget-setting name='display'>LIST</b:widget-setting>
+      <b:widget-setting name='selectedLabelsList'/>
+      <b:widget-setting name='showType'>ALL</b:widget-setting>
+      <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
+    </b:widget-settings>
     <b:includable id='main'>
   <b:if cond='data:title'>
     <h2><data:title/></h2>
@@ -2209,7 +2253,18 @@ var randomRelatedIndex,showRelatedPost;(function(n,m,k){var d={widgetTitle:"<h4>
   </div>
 </b:includable>
   </b:widget>
-  <b:widget id='BlogArchive1' locked='false' title='Blog Archive' type='BlogArchive' version='1' visible='true'>
+  <b:widget id='BlogArchive1' locked='false' title='Blog Archive' type='BlogArchive' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='showStyle'>HIERARCHY</b:widget-setting>
+      <b:widget-setting name='yearPattern'>yyyy</b:widget-setting>
+      <b:widget-setting name='showWeekEnd'>true</b:widget-setting>
+      <b:widget-setting name='monthPattern'>MMMM</b:widget-setting>
+      <b:widget-setting name='dayPattern'>MMM dd</b:widget-setting>
+      <b:widget-setting name='weekPattern'>MM/dd</b:widget-setting>
+      <b:widget-setting name='chronological'>false</b:widget-setting>
+      <b:widget-setting name='showPosts'>true</b:widget-setting>
+      <b:widget-setting name='frequency'>MONTHLY</b:widget-setting>
+    </b:widget-settings>
     <b:includable id='main'>
   <b:if cond='data:title'>
     <h2><data:title/></h2>
@@ -2292,7 +2347,11 @@ var randomRelatedIndex,showRelatedPost;(function(n,m,k){var d={widgetTitle:"<h4>
  </b:if>
 </b:includable>
   </b:widget>
-  <b:widget id='Profile1' locked='false' title='About Me' type='Profile' version='1' visible='true'>
+  <b:widget id='Profile1' locked='false' title='About Me' type='Profile' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='showaboutme'>true</b:widget-setting>
+      <b:widget-setting name='showlocation'>false</b:widget-setting>
+    </b:widget-settings>
     <b:includable id='main'>
     <b:if cond='data:title != &quot;&quot;'>
       <h2><data:title/></h2>
@@ -2335,7 +2394,10 @@ var randomRelatedIndex,showRelatedPost;(function(n,m,k){var d={widgetTitle:"<h4>
     </div>
   </b:includable>
   </b:widget>
-  <b:widget id='Attribution1' locked='false' title='' type='Attribution' visible='true'>
+  <b:widget id='Attribution1' locked='false' title='' type='Attribution'>
+    <b:widget-settings>
+      <b:widget-setting name='copyright'/>
+    </b:widget-settings>
     <b:includable id='main'>
     <div class='widget-content' style='text-align: center;'>
       <b:if cond='data:attribution != &quot;&quot;'>
@@ -2356,7 +2418,7 @@ var randomRelatedIndex,showRelatedPost;(function(n,m,k){var d={widgetTitle:"<h4>
 
 <div class='footerboxnbt' id='firstnbt' role='complementary'>
 <b:section class='footersec' id='footersec1' showaddelement='yes'>
-  <b:widget id='Feed1' locked='false' title='Blogger Themes' type='Feed' visible='true'>
+  <b:widget id='Feed1' locked='false' title='Blogger Themes' type='Feed'>
     <b:includable id='main'>
     <h2><data:title/></h2>
     <div class='widget-content' expr:id='data:widget.instanceId + &quot;_feedItemListDisplay&quot;'>
@@ -2372,7 +2434,7 @@ var randomRelatedIndex,showRelatedPost;(function(n,m,k){var d={widgetTitle:"<h4>
 
 <div class='footerboxnbt' id='secondnbt' role='complementary'>
 <b:section class='footersec' id='footersec2' showaddelement='yes'>
-  <b:widget id='Navbar1' locked='false' title='Navbar' type='Navbar' visible='true'>
+  <b:widget id='Navbar1' locked='false' title='Navbar' type='Navbar'>
     <b:includable id='main'>&lt;script type=&quot;text/javascript&quot;&gt;
     function setAttributeOnload(object, attribute, val) {
       if(window.addEventListener) {
